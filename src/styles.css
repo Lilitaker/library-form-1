@@ -1,0 +1,117 @@
+* {
+    font-family: 'Neuton', serif;
+    --main-color: #285e83;
+    --section-color: #116094d7;
+}
+
+body{
+    padding: 2em;
+    background-image: url(images/book.jpeg);
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #304ca7; 
+    text-align: center;
+    text-shadow: -.2em .2em .2em #5976d6c0;
+}
+
+.subtitle {
+    font-size: 1.9rem;
+    color: var(--main-color);
+    padding: 0 .5em .8em 0;
+}
+
+.user-info__input {
+    display: block;
+    padding: .2em .5em;
+    margin-bottom: .5em;
+    border-radius: 1em;
+    border: 2px solid var(--main-color);
+}
+
+.user-info__input:hover {
+    border-color: var(--section-color);
+    background-color: #deecf1;
+}
+
+.user-info__input:focus {
+    outline: none;
+}
+
+
+.user-info__input--down-mgn {
+    margin-bottom: 1.5em;
+}
+
+.user-info__title {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--section-color);
+    padding-bottom: .8em;
+}
+
+.user-info__label {
+    display: inline-block;
+    margin: 0 0 .1em .5em;
+    color: #387299;
+    font-weight: 600;
+}
+
+.lit-genres {
+    margin-bottom: 1.5em;
+    border: 2px solid var(--section-color);
+    color: var(--section-color);
+    font-weight: 700;
+}
+
+.leg-decoration {
+    text-align: center;
+}
+
+.sign-up-info {
+    margin-bottom: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.checkbox {
+    margin-bottom: 1em;
+    color: var(--section-color);
+    font-weight: 700;
+}
+
+.checkbox__txt {
+    font-size: .8rem;
+}
+
+.sign-up {
+    display: flex;
+    justify-content: center;
+}
+
+.sign-up__btn {
+    font-size: 2rem;
+    font-weight: 700;
+    padding: .3em 1em;
+    color: #263a74;
+    background-color: #b3c0e9e7;
+    border-radius: 1em;
+    border: 4px solid var(--section-color);
+    margin-bottom: 1em;
+}
+
+.login a {
+    text-decoration: none;
+    color: var(--main-color);
+    font-weight: 600;
+}
+
+.login-text {
+    color: var(--section-color);
+    font-weight: 800;
+}

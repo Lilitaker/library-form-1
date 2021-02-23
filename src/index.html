@@ -3,31 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Universe Library</title>
+    <title>Universe Library & Bookstore</title>
+    <link rel="stylesheet" type="text/css" href="normalize.css" />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Neuton:wght@300;400;700;800&display=swap" rel="stylesheet" />
+
 </head>
 <body>
-    <h1>UNIVERSE LIBRARY</h1>
-    <h2>Sign up!</h2>
+    <h1>UNIVERSE LIBRARY & BOOKSTORE</h1>
+    <h2 class="subtitle">Sign up!</h2>
     <form>
 
-        <div>
-            <h3>Personal Information</h3>
-            <label for="name">First Name</label>
-            <input type="text" id="name" name="name" required/>
-            <label for="last-name">Last Name</label>
-            <input type="text" id="last-name" name="last-name" required/>
-            <label for="phone-number">Phone number</label>
-            <input type="tel" id="phone-number" name="phone-number" placeholder="123 4567890" required/>
-            <label for="birthday">Birthday</label>
-            <input type="date" id="birthday" name="birthday" min="1920-01-01" required/>
+        <div class="user-info">
+            <h3 class="user-info__title">Personal Information</h3>
+            <label class="user-info__label" for="name">First Name</label>
+            <input class="user-info__input" type="text" id="name" name="name" required/>         
+            <label class="user-info__label" for="last-name">Last Name</label>
+            <input class="user-info__input" type="text" id="last-name" name="last-name" required/>
+            <label class="user-info__label" for="phone-number"input>Phone number</label>
+            <input class="user-info__input" type="tel" id="phone-number" name="phone-number" placeholder="123 4567890" required/>
+            <label class="user-info__label" for="birthday">Birthday</label>
+            <input class="user-info__input user-info__input--down-mgn" type="date" id="birthday" name="birthday" min="1920-01-01" required/>
         </div>
 
-        <div>
-            <h3>Mailing Information</h3>
-            <label for="address">Address</label>
-            <input type="text" id="address" required/>
-            <label for="country">Country</label>
-            <select id="country" name="country" required>
+        <div class="user-info">
+            <h3 class="user-info__title">Mailing Information</h3>
+            <label class="user-info__label" for="address">Address</label>
+            <input class="user-info__input" type="text" id="address" required/>
+            <label class="user-info__label" for="country">Country</label>
+            <select class="user-info__input" id="country" name="country" required>
                 <option disabled selected value="">--Select your country--</option>
                 <option value="Afganistan">Afghanistan</option>
                 <option value="Albania">Albania</option>
@@ -276,16 +280,16 @@
                 <option value="Zambia">Zambia</option>
                 <option value="Zimbabwe">Zimbabwe</option>
             </select>
-            <label for="state">State</label>
-            <input type="text" id="state" required/>
-            <label for="city">City</label>
-            <input type="text" id="city" required/>
-            <label for="zip">Zip / Postal Code</label>
-            <input type="text" id="zip" required/>
+            <label class="user-info__label" for="state">State</label>
+            <input class="user-info__input" type="text" id="state" required/>
+            <label class="user-info__label" for="city">City</label>
+            <input class="user-info__input" type="text" id="city" required/>
+            <label class="user-info__label" for="zip">Zip / Postal Code</label>
+            <input class="user-info__input user-info__input--down-mgn" type="text" id="zip" required/>
         </div>
         
-        <fieldset id="literary-genres" name="literary-genres">
-            <legend>Choose your favorite literary genres:</legend>
+        <fieldset class="lit-genres" id="literary-genres" name="literary-genres">
+            <legend class="leg-decoration">Choose your favorite literary genres</legend>
             <p>
                 <input type="radio" id="fantasy"/>
                 <label for="fantasy">Fantasy</label>
@@ -328,13 +332,26 @@
             </p>
         </fieldset>
 
-        <div>
-            <input type="checkbox" id="subscription-box" name="subscription-box"/>
-            <label for="subscription-box">By checking this box, I agree I want to receive news, offers, promotional materials, and events information of the Universe Library, by email and phone messages. You can unsubscribe at any time.</label>
+        <div class="user-info sign-up-info">
+            <label class="user-info__label" for="email">Email</label>
+            <input class="user-info__input" type="text" id="email"/>
+            <label class="user-info__label" for="password">Password</label>
+            <input class="user-info__input" type="password" id="password"/> 
+            <label class="user-info__label" for="password">Confirm Password</label>
+            <input class="user-info__input" type="password" id="password"/>
         </div>
 
-        <div>
-            <p>Already have an account? <a href="" target="_blank" title="Login">Login here</a>.</p>
+        <div class="checkbox">
+            <input type="checkbox" id="subscription-box" name="subscription-box" value="subscribe" />
+            <label class="checkbox__txt" for="subscription-box">By checking this box, I agree I want to receive news, offers, promotional materials, and events information of the Universe Library by email. You can unsubscribe at any time.</label>
+        </div>
+
+        <div class="sign-up">
+            <button type="submit" class="sign-up__btn">Sign Up</button>
+        </div>
+
+        <div class="login">
+            <p class="login-text">Already have an account? <a href="#" target="_blank" title="Login">Login here</a>.</p>
         </div>
 
     </form>
