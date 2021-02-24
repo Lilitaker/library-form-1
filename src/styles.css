@@ -33,15 +33,12 @@ h1 {
     border: 2px solid var(--main-color);
 }
 
-.user-info__input:hover {
-    border-color: var(--section-color);
-    background-color: #deecf1;
-}
-
 .user-info__input:focus {
     outline: none;
+    border-color: var(--section-color);
+    background-color: #deecf1;
+    transition-duration: 1s;
 }
-
 
 .user-info__input--down-mgn {
     margin-bottom: 1.5em;
@@ -114,4 +111,73 @@ h1 {
 .login-text {
     color: var(--section-color);
     font-weight: 800;
+}
+
+
+@media only screen and (min-width: 600px){
+    body {
+        padding: 2em 6em;
+        height: 160vh;
+        width: 100vw;
+    }
+
+    h1 {
+        font-size: 4rem;
+        margin: 0;
+        padding: 0.2em 0 0.2em 0;
+    } 
+
+    .subtitle {
+        font-size: 2.5rem;
+        text-align: center;
+        padding-bottom: 0.5em;
+    }
+
+    .block1-desktop {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .user-info__title {
+        font-size: 1.5rem;
+    }
+
+    .user-info__label {
+        font-size: 1.2rem;
+    }
+    
+    .lit-genres__desktop {
+        font-size: 1.3rem;
+        padding-top: 1.5em;
+    }
+
+    .block2-desktop {
+        display: flex;
+        padding-top: 9em;
+    }
+
+    .sign-up-info {
+        padding: 0 0 0 15em;
+    }
+
+    .signup-box-desktop {
+        padding: 0 15em 0 10em;
+    }
+
+    .sign-up {
+        padding-top: 2em;
+    }
+
+    .sign-up__btn {
+        font-size: 2.6rem;
+    }
+
+    .sign-up__btn:hover {
+        background-color: #a9b9ece7;
+        transition: all .4s ease-in
+    }
+
+    .login {
+        text-align: center;
+    }
 }
